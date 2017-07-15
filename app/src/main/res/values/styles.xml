@@ -1,12 +1,16 @@
 <resources>
 
     <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+    <style name="AppTheme" parent="Theme.AppCompat.DayNight">
         <!-- Customize your theme here. -->
         <item name="colorPrimary">#74A1D3</item>
         <item name="colorPrimaryDark">#407DC2</item>
         <item name="android:navigationBarColor">#000000</item>
-        <item name="android:colorBackground">#FFFFFF</item>
+    </style>
+
+    <style name="NavyBtn" parent="@android:style/Theme.Material">
+        <item name="colorButtonNormal">#020e39</item>
+        <item name="android:textColor">#FFFFFF</item>
     </style>
 
 </resources>

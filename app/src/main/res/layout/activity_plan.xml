@@ -6,37 +6,31 @@
     tools:context="com.travelsync.travelsync.Home">
 
     <TextView
-        android:id="@+id/Link"
+        android:id="@+id/Title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:textSize="30dp"
         android:textStyle="bold"
         android:layout_marginBottom="50dp"
-        android:text="Link"/>
+        android:text="Calendar"/>
+
+    <CalendarView
+        android:id="@+id/calendarView"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_below="@+id/Title"/>
+
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Create Plan"
-        android:id="@+id/button"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="100dp"
+        android:layout_marginBottom="50dp"
         android:theme="@style/NavyBtn"
-        android:layout_below="@+id/Link"/>
-    <TextView
-        android:id="@+id/contacts"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:textSize="30dp"
-        android:textStyle="bold"
-        android:text="Contacts"
-        android:layout_below="@+id/button"/>
-
-    <!--<ListView
-        android:id="@+id/contact_list"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/contacts"/>-->
+        android:text="Done"
+        android:layout_below="@+id/calendarView"
+        />
 
 </RelativeLayout>
