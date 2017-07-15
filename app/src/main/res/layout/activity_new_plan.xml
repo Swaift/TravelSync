@@ -1,9 +1,42 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.travelsync.travelsync.NewPlanActivity">
+    tools:context="com.travelsync.travelsync.Home">
 
-</android.support.constraint.ConstraintLayout>
+    <EditText
+        android:id="@+id/Link"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Link"
+        android:layout_centerHorizontal="true" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Create Plan"
+        android:id="@+id/button"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:layout_below="@+id/Link"/>
+    <EditText
+        android:id="@+id/contacts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Contacts"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/button"/>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignStart="@+id/contacts"
+        android:layout_below="@+id/contacts"
+        android:layout_marginTop="100dp" />
+
+</RelativeLayout>
