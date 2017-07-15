@@ -3,14 +3,40 @@
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.AppCompat.DayNight">
         <!-- Customize your theme here. -->
-        <item name="colorPrimary">#74A1D3</item>
-        <item name="colorPrimaryDark">#407DC2</item>
-        <item name="android:navigationBarColor">#000000</item>
+        <item name="colorPrimary">#2b99fb</item>
+        <item name="colorPrimaryDark">#2A6EBB</item>
+        <item name="android:textColorPrimary">#FFFFFF</item>
+        <item name="android:textColorSecondary">#FFFFFF</item>
     </style>
 
     <style name="NavyBtn" parent="@android:style/Theme.Material">
-        <item name="colorButtonNormal">#020e39</item>
+        <item name="android:background">#FF8A00</item>
         <item name="android:textColor">#FFFFFF</item>
+    </style>
+
+    <style name="OrngBtn" parent="@android:style/Theme.Material">
+        <item name="android:colorButtonNormal">#FF8A00</item>
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+
+    <style name="BlueBtn" parent="@android:style/Theme.Material">
+        <item name="android:colorButtonNormal">#2b99fb</item>
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+
+    <style name="Text" parent="Theme.AppCompat.DayNight">
+        <item name="android:textColor">#000000</item>
+        <item name="android:textColorPrimary">#000000</item>
+        <item name="android:textColorSecondary">#000000</item>
+        <item name="android:color">#000000</item>
+        <item name="android:colorPrimary">#000000</item>
+    </style>
+
+    <style name="List" parent="Theme.AppCompat.DayNight">
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textColorPrimary">#FFFFFF</item>
+        <item name="android:textColorSecondary">#FFFFFF</item>
+        <item name="android:background">@android:color/darker_gray</item>
     </style>
 
 </resources>

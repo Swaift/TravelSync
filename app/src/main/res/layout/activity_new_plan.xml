@@ -3,16 +3,27 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:windowSoftInputMode="stateHidden"
     tools:context="com.travelsync.travelsync.Home">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Back"
+        android:theme="@style/OrngBtn"
+        android:id="@+id/back"
+        />
 
     <TextView
         android:id="@+id/Link"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
         android:textSize="30dp"
         android:textStyle="bold"
         android:layout_marginBottom="50dp"
+        android:layout_below="@+id/back"
         android:text="Link"/>
 
     <EditText
@@ -22,18 +33,20 @@
         android:id="@+id/Title"
         android:layout_centerHorizontal="true"
         android:textAlignment="center"
+        android:theme="@style/Text"
         android:inputType="text"
+        android:layout_marginBottom="30dp"
         android:layout_below="@+id/Link">
 
     </EditText>
     <Button
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Create Plan"
         android:id="@+id/button"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="100dp"
-        android:theme="@style/NavyBtn"
+        android:layout_marginBottom="30dp"
+        android:theme="@style/OrngBtn"
         android:layout_below="@+id/Title"/>
     <TextView
         android:id="@+id/contacts"
@@ -43,14 +56,16 @@
         android:textSize="30dp"
         android:textStyle="bold"
         android:text="Contacts"
+        android:layout_marginBottom="20dp"
         android:layout_below="@+id/button"/>
 
     <ListView xmlns:android="http://schemas.android.com/apk/res/android"
         android:id="@+id/contact_list"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_below="@+id/contacts"
         android:choiceMode="multipleChoice"
-        android:listSelector="@android:color/darker_gray"
-        android:layout_below="@+id/contacts"/>
+        android:listSelector="#7ec3ff"
+        android:theme="@style/List" />
 
 </RelativeLayout>
