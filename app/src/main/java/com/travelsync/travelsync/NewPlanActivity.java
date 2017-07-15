@@ -26,9 +26,12 @@ public class NewPlanActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-
-        //ArrayAdapter<String>adapter = new ArrayAdapter<String>(this, R.layout.activity_new_plan, contact_array);
-        //ListView listView = (ListView) findViewById(R.id.contact_list);
-        //listView.setAdapter(adapter);
+        ListView listView = (ListView) findViewById(R.id.contact_list);
+        String[] values = new String[] { "Alex", "Christian", "Tawsif",
+                "Brendan", "Dan", "John" };
+        ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,
+                android.R.layout.simple_list_item_1, values);
+        listView.setAdapter(adapter);
     }
+
 }
