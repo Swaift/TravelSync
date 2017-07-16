@@ -20,6 +20,7 @@
         <activity android:name=".NewPlanActivity"></activity>
         <activity android:name=".Plan"></activity>
         <activity android:name=".Homeaway"></activity>
+        <activity android:name=".Attractions"></activity>
     </application>
 
 </manifest>
