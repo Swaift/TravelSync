@@ -17,7 +17,7 @@ public class Plan extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_plan);
-        intent = new Intent(this, Homeaway.class);
+        intent = new Intent(this, Attractions.class);
         previous = new Intent(this, NewPlanActivity.class);
 
         b1=(Button)findViewById(R.id.button1);

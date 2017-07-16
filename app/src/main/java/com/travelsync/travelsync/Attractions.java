@@ -12,13 +12,24 @@ import android.widget.ListView;
 public class Attractions extends AppCompatActivity{
     ListView listView;
     String[] attractions_array;
+    Button b1;
     Button back;
+    Intent intent;
     Intent previous;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_attractions);
-        previous = new Intent(this, Homeaway.class);
+        intent = new Intent(this, Homeaway.class);
+        previous = new Intent(this, Plan.class);
+
+        b1 = (Button) findViewById(R.id.button1);
+        b1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(intent);
+            }
+        });
 
         back = (Button) findViewById(R.id.back);
         back.setOnClickListener(new View.OnClickListener() {

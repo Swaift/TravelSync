@@ -18,13 +18,13 @@ public class Homeaway extends AppCompatActivity{
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_homeaway);
         intent = new Intent(this, Attractions.class);
-        previous = new Intent(this, Plan.class);
+        previous = new Intent(this, Attractions.class);
 
         b1 = (Button) findViewById(R.id.button1);
         b1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(intent);
+                //startActivity(intent);
             }
         });
         back = (Button) findViewById(R.id.back);
