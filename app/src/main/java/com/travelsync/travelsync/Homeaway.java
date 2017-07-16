@@ -5,6 +5,7 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.support.customtabs.CustomTabsIntent;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CalendarView;
@@ -16,11 +17,7 @@ public class Homeaway extends AppCompatActivity{
     Intent previous;
     Button b1;
     Button back;
-    String city  = ((EditText) findViewById(R.id.cityInput )).getText().toString();
-    String state = ((EditText) findViewById(R.id.stateInput)).getText().toString();
-    String min   = ((EditText) findViewById(R.id.minInput  )).getText().toString();
-    String max   = ((EditText) findViewById(R.id.maxInput  )).getText().toString();
-    String bed   = ((EditText) findViewById(R.id.bedInput  )).getText().toString();
+    String city, state, min, max, bed;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,17 +27,25 @@ public class Homeaway extends AppCompatActivity{
         previous = new Intent(this, Plan.class);
         final AppCompatActivity homeaway = this;
 
+
         b1 = (Button) findViewById(R.id.button1);
         b1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String url = "https://www.homeaway.com/results/keywords:" +
+                city  = ((EditText) findViewById(R.id.cityInput )).getText().toString();
+                state = ((EditText) findViewById(R.id.stateInput)).getText().toString();
+                min   = ((EditText) findViewById(R.id.minInput  )).getText().toString();
+                max   = ((EditText) findViewById(R.id.maxInput  )).getText().toString();
+                bed   = ((EditText) findViewById(R.id.bedInput  )).getText().toString();
+
+                String url = "https://www.homeaway.com/results/arrival:2017-07-16/departure:2017-07-20/keywords:" +
                         city + "+" +
                         state + "/minNightlyPrice/" +
                         min + "/maxNightlyPrice/" +
                         max + "/minSleeps/" +
                         bed;
                 CustomTabsIntent.Builder builder = new CustomTabsIntent.Builder();
+                builder.setToolbarColor(0x3030F9F);
                 CustomTabsIntent customTabsIntent = builder.build();
                 customTabsIntent.launchUrl(homeaway, Uri.parse(url));
                 //startActivity(intent);
