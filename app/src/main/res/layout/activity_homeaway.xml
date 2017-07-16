@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Back"
+        android:theme="@style/OrngBtn"
+        android:id="@+id/back"
+        />
+
+    <TextView
+        android:id="@+id/City"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="20dp"
+        android:text="City:"
+        android:layout_below="@+id/back"/>
+    <EditText
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/cityInput"
+        android:theme="@style/Text"
+        android:inputType="text"
+        android:layout_marginLeft="10dp"
+        android:layout_alignTop="@+id/City"
+        android:layout_alignParentEnd="true" />
+    <TextView
+        android:id="@+id/State"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="20dp"
+        android:text="State: "
+        android:layout_below="@+id/City"/>
+    <EditText
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/stateInput"
+        android:theme="@style/Text"
+        android:inputType="text"
+        android:layout_marginLeft="10dp"
+        android:layout_alignTop="@+id/State"
+        android:layout_alignParentEnd="true" />
+    <TextView
+        android:id="@+id/Min"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="20dp"
+        android:text="Min Price: "
+        android:layout_below="@+id/State"/>
+    <EditText
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/minInput"
+        android:theme="@style/Text"
+        android:inputType="text"
+        android:layout_marginLeft="10dp"
+        android:layout_alignTop="@+id/Min"
+        android:layout_alignParentEnd="true" />
+    <TextView
+        android:id="@+id/Max"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="20dp"
+        android:text="Max Price: "
+        android:layout_below="@+id/Min"/>
+    <EditText
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/maxInput"
+        android:theme="@style/Text"
+        android:inputType="text"
+        android:layout_marginLeft="10dp"
+        android:layout_alignTop="@+id/Max"
+        android:layout_alignParentEnd="true" />
+    <TextView
+        android:id="@+id/Bed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="20dp"
+        android:text="Bedrooms: "
+        android:layout_below="@+id/Max"/>
+    <EditText
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/bedInput"
+        android:theme="@style/Text"
+        android:inputType="text"
+        android:layout_marginLeft="10dp"
+        android:layout_alignTop="@+id/Bed"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:theme="@style/BlueBtn"
+        android:text="Submit"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true" />
+
+</RelativeLayout>
